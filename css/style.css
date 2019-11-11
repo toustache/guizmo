@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+#play, #stop{
+    position:absolute;
+    display: inline-block;
+    left:50%;
+    top:75%;
+    width: 50px;
+    height: 50px;
+    font-size:3rem;
+    text-align:center;
+    cursor:pointer;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    color:white;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+#stop{
+    visibility:hidden;
+}
+
+#haut, #bas {
+    position:absolute;
+    left:50%;
+    top:4%;
+    width: 450px;
+    height: 50px;
+    font-family: 'Bangers', cursive;
+    font-size:3.5rem;
+    text-align:center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    color:white;
+    margin-left: -225px;
+}
+#bas {
+    font-size:3rem;
+    top:68%;
+    text-align:left;
+}
+#cercle {
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    left:83%;
+    top:-30%;
+}
+#noir, #blanc, #retour {
+    display: inline-block;
+    height: 80px;
+    width: 40px;
+    cursor:pointer;
+    position:relative;
+}
+#noir {
+    background: #000;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+    left:-10px;
+}
+#blanc {
+    background: #fff;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 80px;
+}
+#retour {
+    width: 80px;
+    background: url("../textures/retour.png");
+    display:none;
+}
